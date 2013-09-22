@@ -1,0 +1,152 @@
+<?php
+
+/* WalvaSupportkotBundle:parrain:list.html.twig */
+class __TwigTemplate_3ebe61e71eda4d356cc0a951e7a6de1f extends Twig_Template
+{
+    public function __construct(Twig_Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->parent = $this->env->loadTemplate("WalvaSupportkotBundle:parrain:layout.html.twig");
+
+        $this->blocks = array(
+            'title' => array($this, 'block_title'),
+            'breadcrumb' => array($this, 'block_breadcrumb'),
+            'header' => array($this, 'block_header'),
+            'bundle_body' => array($this, 'block_bundle_body'),
+        );
+    }
+
+    protected function doGetParent(array $context)
+    {
+        return "WalvaSupportkotBundle:parrain:layout.html.twig";
+    }
+
+    protected function doDisplay(array $context, array $blocks = array())
+    {
+        // line 3
+        $context["current_page"] = "list";
+        $this->parent->display($context, array_merge($this->blocks, $blocks));
+    }
+
+    // line 6
+    public function block_title($context, array $blocks = array())
+    {
+        // line 7
+        echo "Accueil - ";
+        $this->displayParentBlock("title", $context, $blocks);
+        echo "
+";
+    }
+
+    // line 10
+    public function block_breadcrumb($context, array $blocks = array())
+    {
+        // line 11
+        $this->displayParentBlock("breadcrumb", $context, $blocks);
+        echo "
+<li class=\"active\">List</li>
+
+";
+    }
+
+    // line 17
+    public function block_header($context, array $blocks = array())
+    {
+        // line 18
+        echo "<h1>Liste des parrains</h1>
+";
+    }
+
+    // line 21
+    public function block_bundle_body($context, array $blocks = array())
+    {
+        // line 22
+        echo "
+
+<div class=\"page-header\">
+    <h1>Liste des parrains</h1>
+</div>
+
+
+<table class=\"table table-striped\">
+<thead>
+    <tr>
+        <th>ID</th>
+        <th>Nom</th>
+        <th>Prenom</th>
+        <th>Email</th>
+        <th>Année</th>
+        <th>Faculté</th>
+    </tr>
+</thead>
+<tbody>
+    ";
+        // line 41
+        $context['_parent'] = (array) $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["objects"]) ? $context["objects"] : $this->getContext($context, "objects")));
+        foreach ($context['_seq'] as $context["_key"] => $context["object"]) {
+            // line 42
+            echo "    <tr>
+        <td>";
+            // line 43
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["object"]) ? $context["object"] : $this->getContext($context, "object")), "id"), "html", null, true);
+            echo "</td>
+        <td>";
+            // line 44
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["object"]) ? $context["object"] : $this->getContext($context, "object")), "nom"), "html", null, true);
+            echo "</td>
+        <td>";
+            // line 45
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["object"]) ? $context["object"] : $this->getContext($context, "object")), "prenom"), "html", null, true);
+            echo "</td>
+        <td>";
+            // line 46
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["object"]) ? $context["object"] : $this->getContext($context, "object")), "mail"), "html", null, true);
+            echo "</td>
+        <td>";
+            // line 47
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["object"]) ? $context["object"] : $this->getContext($context, "object")), "annee"), "html", null, true);
+            echo "</td>
+        <td>";
+            // line 48
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["object"]) ? $context["object"] : $this->getContext($context, "object")), "faculte"), "html", null, true);
+            echo "</td>
+    </tr>
+    
+    ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['object'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 52
+        echo "
+
+
+</tbody>
+</table>
+
+
+
+
+</div>
+
+
+";
+    }
+
+    public function getTemplateName()
+    {
+        return "WalvaSupportkotBundle:parrain:list.html.twig";
+    }
+
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  123 => 52,  113 => 48,  109 => 47,  105 => 46,  101 => 45,  97 => 44,  93 => 43,  90 => 42,  86 => 41,  65 => 22,  62 => 21,  57 => 18,  54 => 17,  46 => 11,  43 => 10,  36 => 7,  33 => 6,  28 => 3,);
+    }
+}

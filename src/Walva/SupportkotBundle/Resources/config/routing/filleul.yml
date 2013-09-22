@@ -1,0 +1,38 @@
+filleul:
+    pattern:  /
+    defaults: { _controller: "WalvaSupportkotBundle:Filleul:index" }
+
+filleul_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "WalvaSupportkotBundle:Filleul:show" }
+
+filleul_new:
+    pattern:  /new
+    defaults: { _controller: "WalvaSupportkotBundle:Filleul:new" }
+
+filleul_create:
+    pattern:  /create
+    defaults: { _controller: "WalvaSupportkotBundle:Filleul:create" }
+    requirements: { _method: post }
+
+filleul_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "WalvaSupportkotBundle:Filleul:edit" }
+
+filleul_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "WalvaSupportkotBundle:Filleul:update" }
+    requirements: { _method: post|put }
+
+filleul_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "WalvaSupportkotBundle:Filleul:delete" }
+    requirements: { _method: post|delete }
+
+filleul_sort:
+    pattern:  /sortBy/{sort}
+    defaults: { _controller: "WalvaSupportkotBundle:Filleul:index" }
+
+filleul_sort_with_order:
+    pattern:  /sortBy/{sort}/{order}
+    defaults: { _controller: "WalvaSupportkotBundle:Filleul:index" }

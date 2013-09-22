@@ -1,0 +1,13 @@
+parameters:
+#    walva_supportkot.example.class: Walva\SupportkotBundle\Example
+
+services:
+#    walva_supportkot.example:
+#        class: %walva_supportkot.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
+
+services:
+    natagora.twig.walva_label_bootstrap:
+      class: Walva\SupportkotBundle\Twig\LabelBootstrapExtension
+      tags:
+            - { name: twig.extension }

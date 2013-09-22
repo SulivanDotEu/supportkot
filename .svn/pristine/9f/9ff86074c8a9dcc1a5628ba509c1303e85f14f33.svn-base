@@ -1,0 +1,250 @@
+<?php
+
+/* ::layout.html.twig */
+class __TwigTemplate_1e0469316305f2585b440710d7210f35 extends Twig_Template
+{
+    public function __construct(Twig_Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->parent = false;
+
+        $this->blocks = array(
+            'title' => array($this, 'block_title'),
+            'stylesheets' => array($this, 'block_stylesheets'),
+            'header' => array($this, 'block_header'),
+            'left_menu' => array($this, 'block_left_menu'),
+            'breadcrumb' => array($this, 'block_breadcrumb'),
+            'body' => array($this, 'block_body'),
+            'javascripts' => array($this, 'block_javascripts'),
+        );
+    }
+
+    protected function doDisplay(array $context, array $blocks = array())
+    {
+        // line 2
+        echo "
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />
+        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+
+        <title>";
+        // line 9
+        $this->displayBlock('title', $context, $blocks);
+        echo "</title>
+
+    ";
+        // line 11
+        $this->displayBlock('stylesheets', $context, $blocks);
+        // line 17
+        echo "    </head>
+
+    <body>
+        <div class=\"navbar navbar-static-top\">
+            <div class=\"navbar-inner\">
+                <div class=\"container\">
+                    <a class=\"btn btn-navbar\" data-toggle=\"collapse\" data-target=\".nav-collapse\">
+                        <span class=\"icon-bar\"></span>
+                        <span class=\"icon-bar\"></span>
+                        <span class=\"icon-bar\"></span>
+                    </a>
+                    <div class=\"nav-collapse\">
+                        <ul class=\"nav\">
+                            <li class=\"\"><a href=\"http://bootsnipp.com/\"><i class=\"icon-home\"></i> Accueil</a></li>
+                            <ul class=\"nav\">
+                                <li class=\"dropdown\">
+                                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">
+
+                                        <i class=\"icon-bullhorn\">
+                                        </i> Projets et activités <span class=\"label label-success\">2</span>
+                                        <b class=\"caret\"></b>
+                                    </a>
+                                    <ul class=\"dropdown-menu\">
+                                        <li class=\"\"><a href=\"http://bootsnipp.com/resources\"><i class=\"icon-share\"></i> Acceuil des étudiants</a></li>
+                                        <li class=\"\"><a href=\"http://bootsnipp.com/forms\"><i class=\"icon-tasks\"></i> Insertion professionnelle</a></li>
+                                        <li class=\"divider\"></li>
+                                        <li class=\"\"><a href=\"http://bootsnipp.com/buttons\"><i class=\"icon-pencil\"></i> Welcome Day</a></li>
+                                        <li class=\"\"><a href=\"http://bootsnipp.com/buttons\"><i class=\"icon-pencil\"></i> Welcome Night</a></li>
+                                        <li class=\"\"><a href=\"http://bootsnipp.com/buttons\"><i class=\"icon-pencil\"></i> Atelier Blocus</a></li>
+                                        <li class=\"\"><a href=\"http://bootsnipp.com/buttons\"><i class=\"icon-pencil\"></i> Atelier Méthodologie</a></li>
+                                        <li class=\"\"><a href=\"http://bootsnipp.com/buttons\"><i class=\"icon-pencil\"></i> Soirées Témoignages</a></li>
+                                        <li class=\"\"><a href=\"http://bootsnipp.com/buttons\"><i class=\"icon-pencil\"></i> Soirée Postuler</a></li>
+                                        <li class=\"\"><a href=\"http://bootsnipp.com/buttons\"><i class=\"icon-pencil\"></i> Soirée Vie Active</a></li>
+                                        <li class=\"\"><a href=\"http://bootsnipp.com/buttons\"><i class=\"icon-pencil\"></i> Témoignage parcours internationaux</a></li>
+                                        <li class=\"\"><a href=\"http://bootsnipp.com/buttons\"><i class=\"icon-pencil\"></i> Run&AMP;Bloque</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <li class=\"\"><a href=\"http://bootsnipp.com/tags\"><i class=\"icon-calendar\"></i> Calendrier</a></li>
+                            <ul class=\"nav\">
+                                <li class=\"dropdown\"><a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"><i class=\"icon-list-alt\"></i> Parainage <span class=\"label label-success\">new</span> <b class=\"caret\"></b></a>
+                                    <ul class=\"dropdown-menu\">
+                                        <li class=\"\"><a href=\"http://bootsnipp.com/resources\"><i class=\"icon-share\"></i> List of Resources</a></li>
+                                        <li class=\"\"><a href=\"http://bootsnipp.com/forms\"><i class=\"icon-tasks\"></i> Form Builder</a></li>
+                                        <li class=\"\"><a href=\"http://bootsnipp.com/buttons\"><i class=\"icon-pencil\"></i> Button Builder <span class=\"label label-success\">new</span></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <ul class=\"nav\">
+                                <li class=\"dropdown\">
+                                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">
+
+                                        <i class=\"icon-info-sign\">
+                                        </i> A propos <span class=\"label label-success\">2</span>
+                                        <b class=\"caret\"></b>
+                                    </a>
+                                    <ul class=\"dropdown-menu\">
+                                        <li class=\"\"><a href=\"http://bootsnipp.com/resources\"><i class=\"icon-share\"></i> Equipe</a></li>
+                                        <li class=\"\"><a href=\"http://bootsnipp.com/forms\"><i class=\"icon-tasks\"></i> Contact</a></li>
+                                        <li class=\"\"><a href=\"http://bootsnipp.com/forms\"><i class=\"icon-tasks\"></i> Liens</a></li>
+                                        <li class=\"\"><a href=\"http://bootsnipp.com/forms\"><i class=\"icon-tasks\"></i> Partenaires et Sponsors</a></li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </ul>
+
+                    </div><!--/.nav-collapse -->
+
+                </div>
+            </div>
+        </div>
+        <div id=\"header\" class=\"\">
+            <div class=\"container\">
+";
+        // line 92
+        $this->displayBlock('header', $context, $blocks);
+        // line 96
+        echo "
+                </div>
+            </div>
+            <div class=\"container\" id=\"mainContainer\">
+                <div class=\"row\">
+                    <div id=\"menu\" class=\"span3\">
+
+                        ";
+        // line 103
+        $this->displayBlock('left_menu', $context, $blocks);
+        // line 105
+        echo "                        
+
+          ";
+        // line 108
+        echo "                    </div>
+                    <div id=\"content\" class=\"span9\">
+                        <ul class=\"breadcrumb\">
+
+                        ";
+        // line 112
+        $this->displayBlock('breadcrumb', $context, $blocks);
+        // line 115
+        echo "
+
+                        </ul>
+          ";
+        // line 118
+        $this->displayBlock('body', $context, $blocks);
+        // line 120
+        echo "                    </div>
+                </div>
+
+                <hr>
+
+                <footer>
+                    <p>Support Kot &AMP; Benjamin Ellis © 2013 and beyond.</p>
+                </footer>
+            </div>
+
+  ";
+        // line 130
+        $this->displayBlock('javascripts', $context, $blocks);
+        // line 135
+        echo "
+        </body>
+    </html>";
+    }
+
+    // line 9
+    public function block_title($context, array $blocks = array())
+    {
+        echo "Support Kot";
+    }
+
+    // line 11
+    public function block_stylesheets($context, array $blocks = array())
+    {
+        // line 12
+        echo "
+        <link rel=\"stylesheet\" href=\"";
+        // line 13
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("css/bootstrap.css"), "html", null, true);
+        echo "\" type=\"text/css\" />
+        <link rel=\"stylesheet\" href=\"";
+        // line 14
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("css/bootstrap-responsive.css"), "html", null, true);
+        echo "\" type=\"text/css\" />
+        <link rel=\"stylesheet\" href=\"";
+        // line 15
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("css/supportkot.css"), "html", null, true);
+        echo "\" type=\"text/css\" />
+    ";
+    }
+
+    // line 92
+    public function block_header($context, array $blocks = array())
+    {
+        // line 93
+        echo "                    <h1>Titre de la page</h1>
+                    <p>Ce projet est propulsé par Symfony2, et construit grâce au tutoriel du siteduzero.</p>
+                ";
+    }
+
+    // line 103
+    public function block_left_menu($context, array $blocks = array())
+    {
+        // line 104
+        echo "          ";
+    }
+
+    // line 112
+    public function block_breadcrumb($context, array $blocks = array())
+    {
+        // line 113
+        echo "                            <li><a href=\"#\">Support Kot</a> <span class=\"divider\">/</span></li>
+                            ";
+    }
+
+    // line 118
+    public function block_body($context, array $blocks = array())
+    {
+        // line 119
+        echo "          ";
+    }
+
+    // line 130
+    public function block_javascripts($context, array $blocks = array())
+    {
+        // line 131
+        echo "    ";
+        // line 132
+        echo "            <script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js\"></script>
+            <script type=\"text/javascript\" src=\"";
+        // line 133
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("js/bootstrap.js"), "html", null, true);
+        echo "\"></script>
+  ";
+    }
+
+    public function getTemplateName()
+    {
+        return "::layout.html.twig";
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  236 => 133,  233 => 132,  231 => 131,  228 => 130,  224 => 119,  221 => 118,  216 => 113,  213 => 112,  209 => 104,  206 => 103,  200 => 93,  197 => 92,  191 => 15,  187 => 14,  183 => 13,  180 => 12,  177 => 11,  171 => 9,  165 => 135,  163 => 130,  151 => 120,  149 => 118,  144 => 115,  142 => 112,  136 => 108,  132 => 105,  130 => 103,  121 => 96,  119 => 92,  26 => 2,  61 => 17,  58 => 16,  53 => 19,  50 => 16,  40 => 11,  30 => 6,  74 => 25,  71 => 24,  51 => 13,  45 => 8,  42 => 17,  35 => 9,  32 => 3,  65 => 20,  62 => 19,  57 => 18,  54 => 14,  46 => 13,  43 => 11,  36 => 7,  33 => 7,  28 => 3,);
+    }
+}

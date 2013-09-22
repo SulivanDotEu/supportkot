@@ -1,0 +1,77 @@
+{# empty Twig template #}
+{% extends "WalvaSupportkotBundle:Supportkot:layout.html.twig" %}
+{% set current_page = 'methodo' %}
+
+
+{% block title %}
+Accueil - {{ parent() }}
+{% endblock %}
+
+{% block breadcrumb %}
+{{ parent() }}
+<li class="active">Ateliers Méthodologie</li>
+
+{% endblock %}
+
+
+{% block header %}
+<h1>Ateliers Méthodologie ! </h1>
+{% endblock %}
+
+{% block bundle_body %}
+<div class="row-fluid">
+    <div class="span6">
+
+        <div class="page-header">
+            <h1>The Welcome Day !</h1>
+        </div>
+        <img src="http://francois.schreuer.org/IMG/jpg/louvain-la-neuve_102.jpg" height="100%" class="img-polaroid " style="margin-bottom: 10px;">
+        <p>
+            Le Welcome Day qui existe maintenant depuis 2007 consiste en une journée
+            d’accueil pour les nouveaux arrivants sur le campus universitaire. 
+            Le jour de la rentrée académique, une quarantaine de stands culturels, 
+            informatifs et ludiques prennent possession de la Grand’Place. Le but est 
+            d’établir une vitrine des organisations, activités et services proposés sur 
+            le site de Louvain-la-Neuve. 
+        </p>
+        <p>Cet évènement s’adresse tout particulièrement aux étudiants de Bac1, 
+            aux Erasmus et aux Masters issus d’autres institutions. Les étudiants 
+            de Bac1 reçoivent un Welcome Pack confectionné par nos soins. En effet, 
+            2500 packs sont distribués en échange d’un bon reçu lors de leur séance 
+            d’accueil facultaire. Ils contiennent des informations utiles 
+            (plan, horaire de sports,…), des objets cadeaux (post-it, 
+            vitamines, bic, latte, tour de cou,…), et des flyers publicitaires 
+            (le sponsoring étant notre principale source de fonds pour cet évènement).
+            De plus, au stand d’informations du Supportkot, nous offrons la possibilité
+            aux Bac1 de s’inscrire directement au parrainage de cours que nous lançons
+            dès le début de l’année académique.
+        </p>
+        <p>Le Welcome Day ne se limite pas à un public restreint. 
+            Il est destiné à tous les étudiants de l’UCL, pour qui la rentrée 
+            se fête aussi ! En effet, en plus des stands d’information qui 
+            sont bien entendu ouverts à tous, l’ambiance est assurée toute la 
+            journée grâce à la diffusion de musique et à des animations variées.
+            Le public du Welcome Day est donc assez varié et représente 
+            plusieurs milliers d’étudiants.
+        </p>
+    </div>
+
+
+
+    <div class="span6">
+        <div class="page-header">
+            <h1>The Welcome Night !</h1>
+        </div>
+        <img src="http://www.muse.ucl.ac.be/medias/medias/M/P10191.JPG" height="100%" class="img-polaroid" style="margin-bottom: 10px;">
+        <br>
+        <p>
+            Cette année, dans le prolongement du Welcome Day, nous avons organisé la première édition de la Welcome Night. Il s’agit d’une soirée de concerts organisée ce même jour de rentrée universitaire. Ces concerts gratuits se déroulent en plein air, sur la Place de l’Université. Ils commencent en début de soirée et se terminent à 23h. Un bar à bières spéciales et à boissons équitables (jus Oxfam,..) permet au public de se rafraichir. Des tables et des bancs leur permettent d’assister aux concerts dans une ambiance détendue.
+        </p>
+        <p>
+            L’objectif principal de l’évènement est d’instaurer une ambiance conviviale entre les différents publics de Louvain-la-Neuve. Le public concerné est très large. Il comprend les étudiants et membres du personnel universitaire de tous les sites de l’UCL, les habitants de Louvain-la-Neuve, mais aussi toutes les personnes de la région qui aiment la musique et souhaitent fêter la fin de l’été dans une ambiance bon enfant. Sun7Boulevard et les Public Phones ont attiré un public de 2000 personnes en 2011. En 2012, près de 3000 personnes étaient venues applaudir Idemm, Noa Moon et Camping Sauvach’
+        </p>
+    </div>
+</div>
+
+
+{% endblock %}

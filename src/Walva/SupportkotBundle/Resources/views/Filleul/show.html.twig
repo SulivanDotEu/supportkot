@@ -1,0 +1,57 @@
+{% extends "WalvaSupportkotBundle:Filleul:layout.html.twig" %}
+
+
+{% block breadcrumb %}
+{{ parent() }}
+<li class="active">show</li>
+{% endblock %}
+    
+    
+{% block body -%}
+    <h1>Filleul</h1>
+
+    <table class="table table-striped">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ entity.id }}</td>
+            </tr>
+            <tr>
+                <th>Annee</th>
+                <td>{{ entity.annee }}</td>
+            </tr>
+            <tr>
+                <th>Faculte</th>
+                <td>{{ entity.faculte }}</td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <td>{{ entity.nom }}</td>
+            </tr>
+            <tr>
+                <th>Prenom</th>
+                <td>{{ entity.prenom }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('filleul') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('filleul_edit', { 'id': entity.id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>
+        <form action="{{ path('filleul_delete', { 'id': entity.id }) }}" method="post">
+            <input type="hidden" name="_method" value="DELETE" />
+            {{ form_widget(delete_form) }}
+            <button type="submit">Delete</button>
+        </form>
+    </li>
+</ul>
+{% endblock %}

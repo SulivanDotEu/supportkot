@@ -1,0 +1,91 @@
+<?php
+
+/* WalvaSupportkotBundle:parrain:layout.html.twig */
+class __TwigTemplate_c32c85e4cc4fbfb6e550fe93b7ff206e extends Twig_Template
+{
+    public function __construct(Twig_Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->parent = $this->env->loadTemplate("WalvaSupportkotBundle::layout.html.twig");
+
+        $this->blocks = array(
+            'title' => array($this, 'block_title'),
+            'header' => array($this, 'block_header'),
+            'breadcrumb' => array($this, 'block_breadcrumb'),
+            'bundle_body' => array($this, 'block_bundle_body'),
+            'left_menu' => array($this, 'block_left_menu'),
+        );
+    }
+
+    protected function doGetParent(array $context)
+    {
+        return "WalvaSupportkotBundle::layout.html.twig";
+    }
+
+    protected function doDisplay(array $context, array $blocks = array())
+    {
+        $this->parent->display($context, array_merge($this->blocks, $blocks));
+    }
+
+    // line 3
+    public function block_title($context, array $blocks = array())
+    {
+        // line 4
+        echo "Accueil - ";
+        $this->displayParentBlock("title", $context, $blocks);
+        echo "
+";
+    }
+
+    // line 7
+    public function block_header($context, array $blocks = array())
+    {
+        // line 8
+        echo "<h1>Parrainage : parrain</h1>
+
+";
+    }
+
+    // line 13
+    public function block_breadcrumb($context, array $blocks = array())
+    {
+        // line 14
+        $this->displayParentBlock("breadcrumb", $context, $blocks);
+        echo "
+<li><a href=\"#\">Parrain</a> <span class=\"divider\">/</span></li>
+
+";
+    }
+
+    // line 19
+    public function block_bundle_body($context, array $blocks = array())
+    {
+        // line 20
+        echo "Attention, ce bloc est a définir
+
+";
+    }
+
+    // line 24
+    public function block_left_menu($context, array $blocks = array())
+    {
+        // line 25
+        $this->env->loadTemplate("WalvaSupportkotBundle:parrain:menu.html.twig")->display($context);
+    }
+
+    public function getTemplateName()
+    {
+        return "WalvaSupportkotBundle:parrain:layout.html.twig";
+    }
+
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  74 => 25,  71 => 24,  51 => 13,  45 => 8,  42 => 7,  35 => 4,  32 => 3,  65 => 20,  62 => 19,  57 => 18,  54 => 14,  46 => 11,  43 => 10,  36 => 7,  33 => 6,  28 => 3,);
+    }
+}

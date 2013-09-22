@@ -1,0 +1,26 @@
+{% extends "WalvaSupportkotBundle::layout.html.twig" %}
+
+{% block title %}
+Accueil - {{ parent() }}
+{% endblock %}
+
+{% block header %}
+<h1>Année</h1>
+
+{% endblock %}
+
+
+{% block breadcrumb %}
+{{ parent() }}
+<li><a href="#">Année</a> <span class="divider">/</span></li>
+
+{% endblock %}
+
+{% block bundle_body %}
+Attention, ce bloc est a définir
+
+{% endblock %}
+
+{% block left_menu %}
+{% include "WalvaSupportkotBundle:parrain:menu.html.twig" %}
+{% endblock %}

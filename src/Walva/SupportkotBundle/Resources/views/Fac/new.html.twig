@@ -1,0 +1,22 @@
+{% extends "WalvaSupportkotBundle:parrain:layout.html.twig" %}
+{% set current_page = 'list' %}
+
+{% block container %}
+{% block breadcrumb -%}{% endblock %}
+    <h1>Fac creation</h1>
+
+    <form action="{{ path('fac_create') }}" method="post" {{ form_enctype(form) }}>
+        {{ form_widget(form) }}
+        <p>
+            <button type="submit">Create</button>
+        </p>
+    </form>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('fac') }}">
+            Back to the list
+        </a>
+    </li>
+</ul>
+{% endblock %}

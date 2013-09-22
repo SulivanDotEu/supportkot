@@ -1,0 +1,27 @@
+{% extends "WalvaSupportkotBundle:Filleul:layout.html.twig" %}
+
+
+{% block breadcrumb %}
+{{ parent() }}
+<li class="active">new</li>
+{% endblock %}
+    
+    
+{% block body -%}
+    <h1>Filleul creation</h1>
+
+    <form action="{{ path('filleul_create') }}" method="post" {{ form_enctype(form) }}>
+        {{ form_widget(form) }}
+        <p>
+            <button type="submit">Create</button>
+        </p>
+    </form>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('filleul') }}">
+            Back to the list
+        </a>
+    </li>
+</ul>
+{% endblock %}

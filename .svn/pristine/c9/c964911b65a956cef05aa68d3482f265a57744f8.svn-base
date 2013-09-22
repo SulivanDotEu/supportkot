@@ -1,0 +1,66 @@
+walva_supportkot_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: WalvaSupportkotBundle:Main:index }
+
+walva_supportkot_projets_welcome_day:
+    pattern:  /projets_et_activites/welcome_day
+    defaults: { _controller: WalvaSupportkotBundle:Projets:welcomeDay }
+    
+# ProjetsController
+walva_supportkot_projets_methodo:
+    pattern:  /projets_et_activites/methodo
+    defaults: { _controller: WalvaSupportkotBundle:Projets:methodo }
+
+walva_supportkot_projets_temoin:
+    pattern:  /projets_et_activites/temoin
+    defaults: { _controller: WalvaSupportkotBundle:Projets:temoin }
+
+walva_supportkot_projets_postuler:
+    pattern:  /projets_et_activites/postuler
+    defaults: { _controller: WalvaSupportkotBundle:Projets:postuler }
+
+walva_supportkot_projets_vie:
+    pattern:  /projets_et_activites/vie
+    defaults: { _controller: WalvaSupportkotBundle:Projets:vie }
+
+walva_supportkot_projets_international:
+    pattern:  /projets_et_activites/international
+    defaults: { _controller: WalvaSupportkotBundle:Projets:international }
+
+walva_supportkot_projets_run:
+    pattern:  /projets_et_activites/run
+    defaults: { _controller: WalvaSupportkotBundle:Projets:run }
+
+
+
+# ParrainController
+
+#walva_supportkot_parrain_:
+#    pattern:  /parrain/
+#    defaults: { _controller: WalvaSupportkotBundle:Parrain: }
+
+walva_supportkot_parrain_create:
+    pattern:  /parrain/create
+    defaults: { _controller: WalvaSupportkotBundle:Parrain:create }
+
+walva_supportkot_parrain_list:
+    pattern:  /parrain
+    defaults: { _controller: WalvaSupportkotBundle:Parrain:list }
+    
+walva_supportkot_parrain_update:
+    pattern:  /parrain/update/{id}
+    defaults: { _controller: WalvaSupportkotBundle:Parrain:update }
+    requirements:
+        id : \d+
+    
+walva_supportkot_parrain_delete:
+    pattern:  /parrain/delete/{id}
+    defaults: { _controller: WalvaSupportkotBundle:Parrain:delete }
+    requirements:
+        id : \d+
+    
+walva_supportkot_parrain_read:
+    pattern:  /parrain/read/{id}
+    defaults: { _controller: WalvaSupportkotBundle:Parrain:read }
+    requirements:
+        id : \d+

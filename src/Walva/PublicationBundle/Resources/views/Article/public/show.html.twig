@@ -1,0 +1,24 @@
+{% extends 'WalvaPublicationBundle:Article:layout.html.twig' %}
+
+
+{% block breadcrumb %}
+<li>Support Kot <span class="divider">/</span></li>
+{% if entity.categorie != null %}
+<li class="">{{ entity.categorie }}</a> <span class="divider">/</span></li>
+{% endif %}
+<li class="active">{{ entity.titre }}</a> </li>
+
+
+{% endblock %}
+
+
+     {% block header %}
+    <h1>{{ entity.titre }}</h1>
+{% endblock %}
+
+
+{% block body -%}
+   {{ entity.contenu }}
+
+{% endblock %}
+

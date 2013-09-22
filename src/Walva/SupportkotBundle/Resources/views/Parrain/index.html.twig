@@ -1,0 +1,55 @@
+{% extends "WalvaSupportkotBundle:Parrain:layout.html.twig" %}
+{% set current_page = 'list' %}
+
+{% block breadcrumb %}
+{{ parent() }}
+<li class="active">list</li>
+{% endblock %}
+    
+    
+{% block body %}
+
+    <h1>Parrain list</h1>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Prenom</th>
+                <th>Fac</th>
+                <th>Annee</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('parrain_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+                <td>{{ entity.nom }}</td>
+                <td>{{ entity.prenom }}</td>
+                <td>{{ entity.faculte | walva_label(entity.faculte.couleur) | raw }}</td>
+                <td>{{ entity.annee | walva_label(entity.annee.couleur) | raw }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('parrain_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('parrain_edit', { 'id': entity.id }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('parrain_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

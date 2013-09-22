@@ -1,0 +1,30 @@
+fac:
+    pattern:  /
+    defaults: { _controller: "WalvaSupportkotBundle:Fac:index" }
+
+fac_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "WalvaSupportkotBundle:Fac:show" }
+
+fac_new:
+    pattern:  /new
+    defaults: { _controller: "WalvaSupportkotBundle:Fac:new" }
+
+fac_create:
+    pattern:  /create
+    defaults: { _controller: "WalvaSupportkotBundle:Fac:create" }
+    requirements: { _method: post }
+
+fac_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "WalvaSupportkotBundle:Fac:edit" }
+
+fac_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "WalvaSupportkotBundle:Fac:update" }
+    requirements: { _method: post|put }
+
+fac_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "WalvaSupportkotBundle:Fac:delete" }
+    requirements: { _method: post|delete }

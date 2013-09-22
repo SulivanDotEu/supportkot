@@ -1,0 +1,40 @@
+<ul class="nav nav-tabs nav-stacked" id="left_menu">
+    <li class="{% if current_page == 'welcome_day' %} active {% endif %}">
+        <a href="{{ path('walva_supportkot_projets_welcome_day') }}">
+            <i class="icon-chevron-right {% if current_page == 'welcome_day' %} icon-white {% endif %}"></i>
+            Welcome Day/Welcome Night</a>
+    </li>
+    <li class="{% if current_page == 'methodo' %} active {% endif %}">
+        <a href="{{ path('walva_supportkot_projets_methodo') }}">
+            <i class="icon-chevron-right {% if current_page == 'methodo' %} icon-white {% endif %}"></i>
+            Ateliers Méthodologie</a>
+    </li>
+    <li class="{% if current_page == 'temoin' %} active {% endif %}">
+        <a href="{{ path('walva_supportkot_projets_temoin') }}">
+            <i class="icon-chevron-right {% if current_page == 'temoin' %} icon-white {% endif %}"></i>
+            Soirées Témoignages</a>
+    </li>
+    <li class="{% if current_page == 'postuler' %} active {% endif %}">
+        <a href="{{ path('walva_supportkot_projets_postuler') }}">
+            <i class="icon-chevron-right {% if current_page == 'postuler' %} icon-white {% endif %}"></i>
+            Soirée Postuler</a>
+    </li>
+    <li class="{% if current_page == 'vie' %} active {% endif %}">
+        <a href="{{ path('walva_supportkot_projets_vie') }}">
+            <i class="icon-chevron-right {% if current_page == 'vie' %} icon-white {% endif %}"></i>
+            Soirée Vie Active</a>
+    </li>
+    <li class="{% if current_page == 'international' %} active {% endif %}">
+        <a href="{{ path('walva_supportkot_projets_international') }}">
+            <i class="icon-chevron-right {% if current_page == 'international' %} icon-white {% endif %}"></i>
+            Témoignage parcours internationaux</a>
+    </li>
+    <li class="{% if current_page == 'run' %} active {% endif %}">
+        <a href="{{ path('walva_supportkot_projets_run') }}">
+            <i class="icon-chevron-right {% if current_page == 'run' %} icon-white {% endif %}"></i>
+            Run&AMP;Bloque</a>
+    </li>
+    
+    
+</ul>
+

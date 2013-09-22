@@ -1,0 +1,21 @@
+{% extends "WalvaSupportkotBundle:parrain:layout.html.twig" %}
+{% set current_page = 'list' %}
+
+{% block container %}
+    <h1>Annee creation</h1>
+
+    <form action="{{ path('annee_create') }}" method="post" {{ form_enctype(form) }}>
+        {{ form_widget(form) }}
+        <p>
+            <button type="submit">Create</button>
+        </p>
+    </form>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('annee') }}">
+            Back to the list
+        </a>
+    </li>
+</ul>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "WalvaSupportkotBundle:Supportkot:layout.html.twig" %}
+ 
+{% block title %}
+  Accueil - {{ parent() }}
+{% endblock %}
+ 
+{% block bundle_body %}
+ 
+  <h2>Bienvenue! {{ name }}</h2>
+ 
+  <ul>
+    
+  </ul>
+ 
+{% endblock %}

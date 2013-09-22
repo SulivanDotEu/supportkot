@@ -1,0 +1,38 @@
+{# empty Twig template #}
+{% extends "WalvaSupportkotBundle:parrain:layout.html.twig" %}
+{% set current_page = 'list' %}
+
+
+{% block title %}
+Accueil - {{ parent() }}
+{% endblock %}
+
+{% block breadcrumb %}
+{{ parent() }}
+<li class="active">List</li>
+
+{% endblock %}
+
+
+{% block header %}
+<h1>Liste des parrains</h1>
+{% endblock %}
+
+{% block bundle_body %}
+
+
+<div class="page-header">
+    <h1>Liste des parrains</h1>
+</div>
+<form method="post" {{ form_enctype(form) }}>
+    {{ form_widget(form) }}
+        <input type="submit" class="btn btn-primary" />
+    </form>
+
+
+
+
+</div>
+
+
+{% endblock %}

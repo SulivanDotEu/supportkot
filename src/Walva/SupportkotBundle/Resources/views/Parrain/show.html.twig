@@ -1,0 +1,62 @@
+{% extends "WalvaSupportkotBundle:Parrain:layout.html.twig" %}
+{% set current_page = 'list' %}
+
+
+{% block breadcrumb %}
+{{ parent() }}
+<li class="active">show</li>
+{% endblock %}
+
+{% block body %}
+
+    <h1>Parrain</h1>
+
+    <table class="table table-striped">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ entity.id }}</td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <td>{{ entity.nom }}</td>
+            </tr>
+            <tr>
+                <th>Prenom</th>
+                <td>{{ entity.prenom }}</td>
+            </tr>
+            <tr>
+                <th>Mail</th>
+                <td>{{ entity.mail }}</td>
+            </tr>
+            <tr>
+                <th>Motdepasse</th>
+                <td>{{ entity.motDePasse }}</td>
+            </tr>
+            <tr>
+                <th>Annee</th>
+                <td>{{ entity.annee }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('parrain') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('parrain_edit', { 'id': entity.id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>
+        <form action="{{ path('parrain_delete', { 'id': entity.id }) }}" method="post">
+            <input type="hidden" name="_method" value="DELETE" />
+            {{ form_widget(delete_form) }}
+            <button type="submit">Delete</button>
+        </form>
+    </li>
+</ul>
+{% endblock %}

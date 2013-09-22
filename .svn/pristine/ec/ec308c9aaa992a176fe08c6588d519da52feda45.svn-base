@@ -1,0 +1,137 @@
+{# app/Resources/views/layout.html.twig #}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>{% block title %}Support Kot{% endblock %}</title>
+
+    {% block stylesheets %}
+
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}" type="text/css" />
+        <link rel="stylesheet" href="{{ asset('css/bootstrap-responsive.css') }}" type="text/css" />
+        <link rel="stylesheet" href="{{ asset('css/supportkot.css') }}" type="text/css" />
+    {% endblock %}
+    </head>
+
+    <body>
+        <div class="navbar navbar-static-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <div class="nav-collapse">
+                        <ul class="nav">
+                            <li class=""><a href="http://bootsnipp.com/"><i class="icon-home"></i> Accueil</a></li>
+                            <ul class="nav">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+
+                                        <i class="icon-bullhorn">
+                                        </i> Projets et activités <span class="label label-success">2</span>
+                                        <b class="caret"></b>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class=""><a href="http://bootsnipp.com/resources"><i class="icon-share"></i> Acceuil des étudiants</a></li>
+                                        <li class=""><a href="http://bootsnipp.com/forms"><i class="icon-tasks"></i> Insertion professionnelle</a></li>
+                                        <li class="divider"></li>
+                                        <li class=""><a href="http://bootsnipp.com/buttons"><i class="icon-pencil"></i> Welcome Day</a></li>
+                                        <li class=""><a href="http://bootsnipp.com/buttons"><i class="icon-pencil"></i> Welcome Night</a></li>
+                                        <li class=""><a href="http://bootsnipp.com/buttons"><i class="icon-pencil"></i> Atelier Blocus</a></li>
+                                        <li class=""><a href="http://bootsnipp.com/buttons"><i class="icon-pencil"></i> Atelier Méthodologie</a></li>
+                                        <li class=""><a href="http://bootsnipp.com/buttons"><i class="icon-pencil"></i> Soirées Témoignages</a></li>
+                                        <li class=""><a href="http://bootsnipp.com/buttons"><i class="icon-pencil"></i> Soirée Postuler</a></li>
+                                        <li class=""><a href="http://bootsnipp.com/buttons"><i class="icon-pencil"></i> Soirée Vie Active</a></li>
+                                        <li class=""><a href="http://bootsnipp.com/buttons"><i class="icon-pencil"></i> Témoignage parcours internationaux</a></li>
+                                        <li class=""><a href="http://bootsnipp.com/buttons"><i class="icon-pencil"></i> Run&AMP;Bloque</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <li class=""><a href="http://bootsnipp.com/tags"><i class="icon-calendar"></i> Calendrier</a></li>
+                            <ul class="nav">
+                                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-list-alt"></i> Parainage <span class="label label-success">new</span> <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li class=""><a href="http://bootsnipp.com/resources"><i class="icon-share"></i> List of Resources</a></li>
+                                        <li class=""><a href="http://bootsnipp.com/forms"><i class="icon-tasks"></i> Form Builder</a></li>
+                                        <li class=""><a href="http://bootsnipp.com/buttons"><i class="icon-pencil"></i> Button Builder <span class="label label-success">new</span></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <ul class="nav">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+
+                                        <i class="icon-info-sign">
+                                        </i> A propos <span class="label label-success">2</span>
+                                        <b class="caret"></b>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class=""><a href="http://bootsnipp.com/resources"><i class="icon-share"></i> Equipe</a></li>
+                                        <li class=""><a href="http://bootsnipp.com/forms"><i class="icon-tasks"></i> Contact</a></li>
+                                        <li class=""><a href="http://bootsnipp.com/forms"><i class="icon-tasks"></i> Liens</a></li>
+                                        <li class=""><a href="http://bootsnipp.com/forms"><i class="icon-tasks"></i> Partenaires et Sponsors</a></li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </ul>
+
+                    </div><!--/.nav-collapse -->
+
+                </div>
+            </div>
+        </div>
+        <div id="header" class="">
+            <div class="container">
+{% block header %}
+                    <h1>Titre de la page</h1>
+                    <p>Ce projet est propulsé par Symfony2, et construit grâce au tutoriel du siteduzero.</p>
+                {% endblock %}
+
+                </div>
+            </div>
+            <div class="container" id="mainContainer">
+                <div class="row">
+                    <div id="menu" class="span3">
+
+                        {% block left_menu %}
+          {% endblock %}
+                        
+
+          {#{ render(controller("SdzBlogBundle:Blog:menu", {'nombre': 3})) }#}
+                    </div>
+                    <div id="content" class="span9">
+                        <ul class="breadcrumb">
+
+                        {% block breadcrumb %}
+                            <li><a href="#">Support Kot</a> <span class="divider">/</span></li>
+                            {% endblock %}
+
+
+                        </ul>
+          {% block body %}
+          {% endblock %}
+                    </div>
+                </div>
+
+                <hr>
+
+                <footer>
+                    <p>Support Kot &AMP; Benjamin Ellis © 2013 and beyond.</p>
+                </footer>
+            </div>
+
+  {% block javascripts %}
+    {# Ajoutez ces lignes JavaScript si vous comptez vous servir des fonctionnalités du bootstrap Twitter #}
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+            <script type="text/javascript" src="{{ asset('js/bootstrap.js') }}"></script>
+  {% endblock %}
+
+        </body>
+    </html>

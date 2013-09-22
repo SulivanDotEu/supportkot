@@ -1,0 +1,214 @@
+<?php
+
+namespace Walva\SupportkotBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Parrain
+ *
+ * @ORM\Table()
+ * @ORM\Entity(repositoryClass="Walva\SupportkotBundle\Entity\ParrainRepository")
+ */
+class Parrain
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nom", type="string", length=255)
+     */
+    private $nom;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="prenom", type="string", length=255)
+     */
+    private $prenom;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="mail", type="string", length=255)
+     */
+    private $mail;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="motDePasse", type="string", length=255)
+     */
+    private $motDePasse;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="annee", type="string", length=255)
+     */
+    private $annee;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="faculte", type="string", length=255)
+     */
+    private $faculte;
+
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set nom
+     *
+     * @param string $nom
+     * @return Parrain
+     */
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
+    
+        return $this;
+    }
+
+    /**
+     * Get nom
+     *
+     * @return string 
+     */
+    public function getNom()
+    {
+        return $this->nom;
+    }
+
+    /**
+     * Set prenom
+     *
+     * @param string $prenom
+     * @return Parrain
+     */
+    public function setPrenom($prenom)
+    {
+        $this->prenom = $prenom;
+    
+        return $this;
+    }
+
+    /**
+     * Get prenom
+     *
+     * @return string 
+     */
+    public function getPrenom()
+    {
+        return $this->prenom;
+    }
+
+    /**
+     * Set mail
+     *
+     * @param string $mail
+     * @return Parrain
+     */
+    public function setMail($mail)
+    {
+        $this->mail = $mail;
+    
+        return $this;
+    }
+
+    /**
+     * Get mail
+     *
+     * @return string 
+     */
+    public function getMail()
+    {
+        return $this->mail;
+    }
+
+    /**
+     * Set motDePasse
+     *
+     * @param string $motDePasse
+     * @return Parrain
+     */
+    public function setMotDePasse($motDePasse)
+    {
+        $this->motDePasse = $motDePasse;
+    
+        return $this;
+    }
+
+    /**
+     * Get motDePasse
+     *
+     * @return string 
+     */
+    public function getMotDePasse()
+    {
+        return $this->motDePasse;
+    }
+
+    /**
+     * Set annee
+     *
+     * @param string $annee
+     * @return Parrain
+     */
+    public function setAnnee($annee)
+    {
+        $this->annee = $annee;
+    
+        return $this;
+    }
+
+    /**
+     * Get annee
+     *
+     * @return string 
+     */
+    public function getAnnee()
+    {
+        return $this->annee;
+    }
+
+    /**
+     * Set faculte
+     *
+     * @param string $faculte
+     * @return Parrain
+     */
+    public function setFaculte($faculte)
+    {
+        $this->faculte = $faculte;
+    
+        return $this;
+    }
+
+    /**
+     * Get faculte
+     *
+     * @return string 
+     */
+    public function getFaculte()
+    {
+        return $this->faculte;
+    }
+}

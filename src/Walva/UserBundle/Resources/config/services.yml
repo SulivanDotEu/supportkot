@@ -1,0 +1,12 @@
+parameters:
+#    walva_user.example.class: Walva\UserBundle\Example
+
+services:
+#    walva_user.example:
+#        class: %walva_user.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
+  walva_user.registration.form.type:
+        class: Walva\UserBundle\Form\Type\RegistrationParrainFormType
+        arguments: [%fos_user.model.user.class%]
+        tags:
+            - { name: form.type, alias: walva_user_registration }

@@ -1,0 +1,35 @@
+{% extends "WalvaSupportkotBundle:Parrain:layout.html.twig" %}
+{% set current_page = 'list' %}
+
+{% block breadcrumb %}
+{{ parent() }}
+<li class="active">edit</li>
+{% endblock %}
+    
+    
+{% block body %}
+    <h1>Parrain edit</h1>
+
+    <form action="{{ path('parrain_update', { 'id': entity.id }) }}" method="post" {{ form_enctype(edit_form) }}>
+        <input type="hidden" name="_method" value="PUT" />
+        {{ form_widget(edit_form) }}
+        <p>
+            <button type="submit" class="btn btn-primary">Edit</button>
+        </p>
+    </form>
+
+        <ul class="record_actions">
+    <li>
+        <a class="btn btn-primary" href="{{ path('parrain') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <form action="{{ path('parrain_delete', { 'id': entity.id }) }}" method="post">
+            <input type="hidden" name="_method" value="DELETE" />
+            {{ form_widget(delete_form) }}
+            <button type="submit" class="btn btn-primary">Delete</button>
+        </form>
+    </li>
+</ul>
+{% endblock %}

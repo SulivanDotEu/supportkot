@@ -1,0 +1,14 @@
+<?php
+
+namespace Walva\SupportkotBundle\Controller;
+
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+
+class MainController extends Controller
+{
+    public function indexAction($name)
+    {
+        return $this->render('WalvaSupportkotBundle:Supportkot:index.html.twig',
+                array('name' => $name));
+    }
+}

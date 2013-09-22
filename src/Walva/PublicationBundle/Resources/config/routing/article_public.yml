@@ -1,0 +1,26 @@
+article_public:
+    pattern:  /
+    defaults: { _controller: "WalvaPublicationBundle:PublicArticle:index" }
+
+article_big_list:
+    pattern:  /articles_et_nouvelles
+    defaults: { _controller: "WalvaPublicationBundle:PublicArticle:bigList" }
+
+    
+article_public_list:
+    pattern:  /page/{page}
+    defaults: { _controller: "WalvaPublicationBundle:PublicArticle:index" }
+
+
+
+article_public_list_categorie:
+    pattern:  /cat/{id}
+    defaults: { _controller: "WalvaPublicationBundle:PublicArticle:listByCategorie" }
+
+article_public_list_categorie_and_page:
+    pattern:  /cat/{id}/page/{page}
+    defaults: { _controller: "WalvaPublicationBundle:PublicArticle:listByCategorie" }
+
+article_public_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "WalvaPublicationBundle:PublicArticle:show" }

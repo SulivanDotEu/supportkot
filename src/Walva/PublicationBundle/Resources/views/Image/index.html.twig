@@ -1,0 +1,63 @@
+{% extends 'WalvaPublicationBundle:Image:layout.html.twig' %}
+
+
+{% block breadcrumb %}
+{{ parent() }}
+<li class="active">Image list</li>
+{% endblock %}
+
+
+
+
+
+{% block body -%}
+<h1>Image list</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Url</th>
+            <th>Alt</th>
+            <th>Image</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('image_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+                <td>{{ entity.webPath }}</td>
+                <td>{{ entity.alt }}</td>
+                <td>
+                    <div style="max-width: 100px;">
+                        <img
+
+                            src="{{ asset(entity.webPath) }}"
+                            alt="{{ entity.alt }}"
+                            />
+                    </div>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('image_show', { 'id': entity.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('image_edit', { 'id': entity.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('image_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

@@ -1,0 +1,6 @@
+
+{% for entity in entities %}
+<li class=""><a href="{{ path('article_show', { 'id': entity.id }) }}"><i class="icon-pencil"></i> {{entity.titre}}</a></li>
+{% endfor %}
+
+

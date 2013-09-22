@@ -1,0 +1,4 @@
+walva_supportkot:
+    resource: "@WalvaSupportkotBundle/Resources/config/routing.yml"
+    prefix:   /
+

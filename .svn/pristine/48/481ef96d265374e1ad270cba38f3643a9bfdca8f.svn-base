@@ -1,0 +1,7 @@
+parameters:
+#    walva_supportkot.example.class: Walva\SupportkotBundle\Example
+
+services:
+#    walva_supportkot.example:
+#        class: %walva_supportkot.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

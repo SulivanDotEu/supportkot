@@ -1,0 +1,32 @@
+{% extends 'WalvaPublicationBundle:Categorie:layout.html.twig' %}
+
+
+{% block breadcrumb %}
+{{ parent() }}
+<li class="active">Article edit</li>
+{% endblock %}
+
+
+
+
+{% block body -%}
+    <h1>Categorie edit</h1>
+
+    {{ form(edit_form) }}
+
+<div class="pull-right">
+{{ form(delete_form) }}
+</div>
+
+{% endblock %}
+
+    
+    {% block container_header_right %}
+
+
+    <a class="btn " href="{{ path('categorie') }}">
+        <i class="icon-chevron-left"></i> 
+        Back to the list
+    </a>
+
+{% endblock %}

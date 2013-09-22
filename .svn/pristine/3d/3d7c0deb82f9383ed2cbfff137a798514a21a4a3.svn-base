@@ -1,0 +1,22 @@
+<?php
+
+namespace Walva\SupportkotBundle\Controller;
+
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+
+class ProjetsController extends Controller
+{
+    public function indexAction($name)
+    {
+        return $this->render('WalvaSupportkotBundle:Supportkot:index.html.twig',
+                array('name' => $name));
+    }
+    
+    public function welcomeDayAction(){
+        return $this->render('WalvaSupportkotBundle:Supportkot:welcome_day.html.twig', array());
+    }
+    
+    public function methodoAction(){
+        return $this->render('WalvaSupportkotBundle:Supportkot:methodo.html.twig', array());
+    }
+}

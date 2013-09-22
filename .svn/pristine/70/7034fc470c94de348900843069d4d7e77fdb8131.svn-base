@@ -1,0 +1,64 @@
+{# empty Twig template #}
+{% extends "WalvaSupportkotBundle:parrain:layout.html.twig" %}
+{% set current_page = 'list' %}
+
+
+{% block title %}
+Accueil - {{ parent() }}
+{% endblock %}
+
+{% block breadcrumb %}
+{{ parent() }}
+<li class="active">List</li>
+
+{% endblock %}
+
+
+{% block header %}
+<h1>Liste des parrains</h1>
+{% endblock %}
+
+{% block bundle_body %}
+
+
+<div class="page-header">
+    <h1>Liste des parrains</h1>
+</div>
+
+
+<table class="table table-striped">
+<thead>
+    <tr>
+        <th>ID</th>
+        <th>Nom</th>
+        <th>Prenom</th>
+        <th>Email</th>
+        <th>Année</th>
+        <th>Faculté</th>
+    </tr>
+</thead>
+<tbody>
+    {% for object in objects %}
+    <tr>
+        <td>{{ object.id }}</td>
+        <td>{{ object.nom}}</td>
+        <td>{{ object.prenom}}</td>
+        <td>{{ object.mail }}</td>
+        <td>{{ object.annee }}</td>
+        <td>{{ object.faculte }}</td>
+    </tr>
+    
+    {% endfor %}
+
+
+
+</tbody>
+</table>
+
+
+
+
+</div>
+
+
+{% endblock %}

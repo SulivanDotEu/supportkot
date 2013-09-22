@@ -1,0 +1,26 @@
+{% extends "WalvaSupportkotBundle::layout.html.twig" %}
+
+{% block title %}
+Accueil - {{ parent() }}
+{% endblock %}
+
+{% block header %}
+<h1>Coucou les copains</h1>
+<p>Ce projet est propulsé par Symfony2, et construit grâce au tutoriel du siteduzero.</p>
+{% endblock %}
+
+
+{% block breadcrumb %}
+{{ parent() }}
+<li><a href="#">Projets et activités</a> <span class="divider">/</span></li>
+
+{% endblock %}
+
+{% block bundle_body %}
+Attention, ce bloc est a définir
+
+{% endblock %}
+
+{% block left_menu %}
+{% include "WalvaSupportkotBundle:Supportkot:menu.html.twig" %}
+{% endblock %}

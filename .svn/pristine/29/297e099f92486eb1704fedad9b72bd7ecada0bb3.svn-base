@@ -1,0 +1,69 @@
+<?php
+
+/* WalvaSupportkotBundle:parrain:index.html.twig */
+class __TwigTemplate_575a98da75fb75d05d1ef48f35339c9b extends Twig_Template
+{
+    public function __construct(Twig_Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->parent = $this->env->loadTemplate("WalvaSupportkotBundle:Supportkot:layout.html.twig");
+
+        $this->blocks = array(
+            'title' => array($this, 'block_title'),
+            'bundle_body' => array($this, 'block_bundle_body'),
+        );
+    }
+
+    protected function doGetParent(array $context)
+    {
+        return "WalvaSupportkotBundle:Supportkot:layout.html.twig";
+    }
+
+    protected function doDisplay(array $context, array $blocks = array())
+    {
+        $this->parent->display($context, array_merge($this->blocks, $blocks));
+    }
+
+    // line 3
+    public function block_title($context, array $blocks = array())
+    {
+        // line 4
+        echo "  Accueil - ";
+        $this->displayParentBlock("title", $context, $blocks);
+        echo "
+";
+    }
+
+    // line 7
+    public function block_bundle_body($context, array $blocks = array())
+    {
+        // line 8
+        echo " 
+  <h2>Bienvenue! ";
+        // line 9
+        echo twig_escape_filter($this->env, (isset($context["name"]) ? $context["name"] : $this->getContext($context, "name")), "html", null, true);
+        echo "</h2>
+ 
+  <ul>
+    
+  </ul>
+ 
+";
+    }
+
+    public function getTemplateName()
+    {
+        return "WalvaSupportkotBundle:parrain:index.html.twig";
+    }
+
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  45 => 9,  42 => 8,  39 => 7,  32 => 4,  29 => 3,);
+    }
+}

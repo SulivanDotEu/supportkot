@@ -1,0 +1,77 @@
+<?php
+
+/* WalvaSupportkotBundle:parrain:menu.html.twig */
+class __TwigTemplate_21c8c78a9e1b5497b241d4ed74cb13c5 extends Twig_Template
+{
+    public function __construct(Twig_Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->parent = false;
+
+        $this->blocks = array(
+        );
+    }
+
+    protected function doDisplay(array $context, array $blocks = array())
+    {
+        // line 1
+        echo "<ul class=\"nav nav-tabs nav-stacked\" id=\"left_menu\">
+    <li class=\"";
+        // line 2
+        if (((isset($context["current_page"]) ? $context["current_page"] : $this->getContext($context, "current_page")) == "list")) {
+            echo " active ";
+        }
+        echo "\">
+        <a href=\"";
+        // line 3
+        echo $this->env->getExtension('routing')->getPath("walva_supportkot_parrain_list");
+        echo "\">
+            <i class=\"icon-chevron-right ";
+        // line 4
+        if (((isset($context["current_page"]) ? $context["current_page"] : $this->getContext($context, "current_page")) == "list")) {
+            echo " icon-white ";
+        }
+        echo "\"></i>
+            List</a>
+    </li>
+    <li class=\"";
+        // line 7
+        if (((isset($context["current_page"]) ? $context["current_page"] : $this->getContext($context, "current_page")) == "create")) {
+            echo " active ";
+        }
+        echo "\">
+        <a href=\"";
+        // line 8
+        echo $this->env->getExtension('routing')->getPath("walva_supportkot_parrain_create");
+        echo "\">
+            <i class=\"icon-chevron-right ";
+        // line 9
+        if (((isset($context["current_page"]) ? $context["current_page"] : $this->getContext($context, "current_page")) == "create")) {
+            echo " icon-white ";
+        }
+        echo "\"></i>
+            Create</a>
+    </li>
+
+    
+</ul>
+
+";
+    }
+
+    public function getTemplateName()
+    {
+        return "WalvaSupportkotBundle:parrain:menu.html.twig";
+    }
+
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  50 => 9,  46 => 8,  40 => 7,  32 => 4,  28 => 3,  22 => 2,  19 => 1,);
+    }
+}

@@ -1,0 +1,30 @@
+annee:
+    pattern:  /
+    defaults: { _controller: "WalvaSupportkotBundle:Annee:index" }
+
+annee_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "WalvaSupportkotBundle:Annee:show" }
+
+annee_new:
+    pattern:  /new
+    defaults: { _controller: "WalvaSupportkotBundle:Annee:new" }
+
+annee_create:
+    pattern:  /create
+    defaults: { _controller: "WalvaSupportkotBundle:Annee:create" }
+    requirements: { _method: post }
+
+annee_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "WalvaSupportkotBundle:Annee:edit" }
+
+annee_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "WalvaSupportkotBundle:Annee:update" }
+    requirements: { _method: post|put }
+
+annee_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "WalvaSupportkotBundle:Annee:delete" }
+    requirements: { _method: post|delete }

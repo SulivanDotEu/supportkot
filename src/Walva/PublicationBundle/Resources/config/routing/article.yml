@@ -1,0 +1,38 @@
+article_list:
+    pattern:  /list
+    defaults: { _controller: "WalvaPublicationBundle:Article:list" }
+
+article:
+    pattern:  /
+    defaults: { _controller: "WalvaPublicationBundle:Article:index" }
+
+article_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "WalvaPublicationBundle:Article:show" }
+    
+article_show_by_slug:
+    pattern:  /show/{slug}
+    defaults: { _controller: "WalvaPublicationBundle:Article:showBySlug" }
+
+article_new:
+    pattern:  /new
+    defaults: { _controller: "WalvaPublicationBundle:Article:new" }
+
+article_create:
+    pattern:  /create
+    defaults: { _controller: "WalvaPublicationBundle:Article:create" }
+    requirements: { _method: post }
+
+article_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "WalvaPublicationBundle:Article:edit" }
+
+article_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "WalvaPublicationBundle:Article:update" }
+    requirements: { _method: post|put }
+
+article_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "WalvaPublicationBundle:Article:delete" }
+    requirements: { _method: post|delete }

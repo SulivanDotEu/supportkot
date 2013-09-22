@@ -1,0 +1,11 @@
+categorie_public:
+    pattern:  /
+    defaults: { _controller: "WalvaPublicationBundle:Categorie:index" }
+
+categorie_public_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "WalvaPublicationBundle:Categorie:show" }
+
+categorie_public_menu:
+    pattern:  /submenu
+    defaults: { _controller: "WalvaPublicationBundle:Categorie:menu" }

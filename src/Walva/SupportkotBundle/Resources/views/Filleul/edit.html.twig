@@ -1,0 +1,37 @@
+{% extends "WalvaSupportkotBundle:Filleul:layout.html.twig" %}
+{% set current_page = 'list' %}
+
+
+{% block breadcrumb %}
+{{ parent() }}
+<li class="active">list</li>
+{% endblock %}
+    
+    
+    
+{% block container %}
+    <h1>Filleul edit</h1>
+
+    <form action="{{ path('filleul_update', { 'id': entity.id }) }}" method="post" {{ form_enctype(edit_form) }}>
+        <input type="hidden" name="_method" value="PUT" />
+        {{ form_widget(edit_form) }}
+        <p>
+            <button type="submit" class="btn btn-primary">Edit</button>
+        </p>
+    </form>
+
+        <ul class="record_actions">
+    <li>
+        <a class="btn btn-primary" href="{{ path('filleul') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <form action="{{ path('filleul_delete', { 'id': entity.id }) }}" method="post">
+            <input type="hidden" name="_method" value="DELETE" />
+            {{ form_widget(delete_form) }}
+            <button type="submit" class="btn btn-primary">Delete</button>
+        </form>
+    </li>
+</ul>
+{% endblock %}

@@ -1,0 +1,79 @@
+<?php
+
+/* WalvaSupportkotBundle::layout.html.twig */
+class __TwigTemplate_76500dd4d7d1b2d27b22ed779414f248 extends Twig_Template
+{
+    public function __construct(Twig_Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->parent = $this->env->loadTemplate("::layout.html.twig");
+
+        $this->blocks = array(
+            'title' => array($this, 'block_title'),
+            'body' => array($this, 'block_body'),
+            'bundle_body' => array($this, 'block_bundle_body'),
+        );
+    }
+
+    protected function doGetParent(array $context)
+    {
+        return "::layout.html.twig";
+    }
+
+    protected function doDisplay(array $context, array $blocks = array())
+    {
+        $this->parent->display($context, array_merge($this->blocks, $blocks));
+    }
+
+    // line 6
+    public function block_title($context, array $blocks = array())
+    {
+        // line 7
+        echo "  Blog - ";
+        $this->displayParentBlock("title", $context, $blocks);
+        echo "
+";
+    }
+
+    // line 10
+    public function block_body($context, array $blocks = array())
+    {
+        // line 11
+        echo " 
+  ";
+        // line 13
+        echo "
+ 
+  ";
+        // line 16
+        echo "  ";
+        $this->displayBlock('bundle_body', $context, $blocks);
+        // line 19
+        echo " 
+";
+    }
+
+    // line 16
+    public function block_bundle_body($context, array $blocks = array())
+    {
+        // line 17
+        echo "  
+  ";
+    }
+
+    public function getTemplateName()
+    {
+        return "WalvaSupportkotBundle::layout.html.twig";
+    }
+
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  61 => 17,  58 => 16,  53 => 19,  50 => 16,  40 => 10,  30 => 6,  74 => 25,  71 => 24,  51 => 13,  45 => 8,  42 => 7,  35 => 4,  32 => 3,  65 => 20,  62 => 19,  57 => 18,  54 => 14,  46 => 13,  43 => 11,  36 => 7,  33 => 7,  28 => 3,);
+    }
+}

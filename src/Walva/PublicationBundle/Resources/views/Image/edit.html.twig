@@ -1,0 +1,26 @@
+{% extends 'WalvaPublicationBundle:Image:layout.html.twig' %}
+
+{% block breadcrumb %}
+{{ parent() }}
+<li class="active">Image edit</li>
+{% endblock %}
+
+
+{% block body -%}
+<h1>Image edit</h1>
+
+    {{ form(edit_form) }}
+
+<div class="pull-right">
+{{ form(delete_form) }}
+    </div>
+{% endblock %}
+
+
+{% block container_header_right %}
+    <a class="btn " href="{{ path('image') }}">
+        <i class="icon-chevron-left"></i> 
+        Back to the list
+    </a>
+
+{% endblock %}

@@ -1,0 +1,38 @@
+parrain:
+    pattern:  /
+    defaults: { _controller: "WalvaSupportkotBundle:Parrain:index" }
+
+parrain_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "WalvaSupportkotBundle:Parrain:show" }
+
+parrain_new:
+    pattern:  /new
+    defaults: { _controller: "WalvaSupportkotBundle:Parrain:new" }
+
+parrain_create:
+    pattern:  /create
+    defaults: { _controller: "WalvaSupportkotBundle:Parrain:create" }
+    requirements: { _method: post }
+
+parrain_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "WalvaSupportkotBundle:Parrain:edit" }
+
+parrain_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "WalvaSupportkotBundle:Parrain:update" }
+    requirements: { _method: post|put }
+
+parrain_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "WalvaSupportkotBundle:Parrain:delete" }
+    requirements: { _method: post|delete }
+
+parrain_sort:
+    pattern:  /sortBy/{sort}
+    defaults: { _controller: "WalvaSupportkotBundle:Parrain:index" }
+
+parrain_sort_with_order:
+    pattern:  /sortBy/{sort}/{order}
+    defaults: { _controller: "WalvaSupportkotBundle:Parrain:index" }

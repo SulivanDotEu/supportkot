@@ -1,0 +1,45 @@
+{% extends "WalvaSupportkotBundle:Parrain:layout.html.twig" %}
+{% set current_page = 'list' %}
+
+{% block breadcrumb %}
+{{ parent() }}
+<li class="active">associations</li>
+{% endblock %}
+    
+    
+{% block body %}
+
+     
+     {% for row, entities in array %}
+    <h2>{{row}}</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Annee</th>
+                <th>Filleuls</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+                {% for entity in entities %}
+                
+            <tr>
+                <td rowspan="{{ 2 }}"><a href="{{ path('parrain_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+                <td rowspan="{{ 2 }}">{{ entity.prenom }} {{ entity.nom }}</td>
+                <td rowspan="{{ 2 }}">{{ entity.annee | walva_label(entity.annee.couleur) | raw }}</td>
+                 <td>test test</td>
+            </tr>
+            <tr>
+                <td>test test</td>
+            </tr>
+           
+            
+        {% endfor %}
+             </tbody>
+    </table>
+        {% endfor %}
+       
+    
+{% endblock %}

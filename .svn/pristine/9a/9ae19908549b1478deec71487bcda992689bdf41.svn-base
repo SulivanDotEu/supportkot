@@ -1,0 +1,60 @@
+<?php
+
+/* AcmeDemoBundle:Secured:helloadmin.html.twig */
+class __TwigTemplate_882b94307c97756b93d048a8dea5d4a4 extends Twig_Template
+{
+    public function __construct(Twig_Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->parent = $this->env->loadTemplate("AcmeDemoBundle:Secured:layout.html.twig");
+
+        $this->blocks = array(
+            'title' => array($this, 'block_title'),
+            'content' => array($this, 'block_content'),
+        );
+    }
+
+    protected function doGetParent(array $context)
+    {
+        return "AcmeDemoBundle:Secured:layout.html.twig";
+    }
+
+    protected function doDisplay(array $context, array $blocks = array())
+    {
+        // line 9
+        $context["code"] = $this->env->getExtension('demo')->getCode($this);
+        $this->parent->display($context, array_merge($this->blocks, $blocks));
+    }
+
+    // line 3
+    public function block_title($context, array $blocks = array())
+    {
+        echo twig_escape_filter($this->env, ("Hello " . (isset($context["name"]) ? $context["name"] : $this->getContext($context, "name"))), "html", null, true);
+    }
+
+    // line 5
+    public function block_content($context, array $blocks = array())
+    {
+        // line 6
+        echo "    <h1 class=\"title\">Hello ";
+        echo twig_escape_filter($this->env, (isset($context["name"]) ? $context["name"] : $this->getContext($context, "name")), "html", null, true);
+        echo " secured for Admins only!</h1>
+";
+    }
+
+    public function getTemplateName()
+    {
+        return "AcmeDemoBundle:Secured:helloadmin.html.twig";
+    }
+
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  59 => 13,  127 => 28,  110 => 22,  102 => 17,  90 => 32,  118 => 28,  104 => 24,  100 => 23,  76 => 17,  65 => 22,  236 => 133,  233 => 132,  231 => 131,  228 => 130,  221 => 118,  216 => 113,  213 => 112,  206 => 103,  200 => 93,  197 => 92,  191 => 15,  180 => 12,  58 => 12,  53 => 11,  480 => 162,  474 => 161,  469 => 158,  461 => 155,  457 => 153,  453 => 151,  444 => 149,  440 => 148,  437 => 147,  435 => 146,  430 => 144,  427 => 143,  423 => 142,  413 => 134,  409 => 132,  407 => 131,  402 => 130,  398 => 129,  393 => 126,  387 => 122,  384 => 121,  381 => 120,  379 => 119,  374 => 116,  368 => 112,  365 => 111,  362 => 110,  360 => 109,  355 => 106,  341 => 105,  337 => 103,  322 => 101,  314 => 99,  312 => 98,  309 => 97,  305 => 95,  298 => 91,  294 => 90,  285 => 89,  283 => 88,  278 => 86,  268 => 85,  264 => 84,  258 => 81,  252 => 80,  247 => 78,  241 => 77,  235 => 74,  229 => 73,  224 => 119,  220 => 70,  214 => 69,  208 => 68,  169 => 60,  143 => 56,  140 => 34,  132 => 105,  128 => 49,  119 => 92,  107 => 36,  71 => 24,  177 => 11,  165 => 135,  160 => 61,  135 => 47,  126 => 45,  114 => 42,  84 => 29,  70 => 20,  67 => 15,  61 => 12,  38 => 6,  94 => 34,  89 => 20,  85 => 25,  75 => 23,  68 => 14,  56 => 11,  87 => 20,  21 => 2,  26 => 9,  93 => 28,  88 => 31,  78 => 26,  46 => 8,  27 => 4,  44 => 12,  31 => 3,  28 => 3,  201 => 92,  196 => 90,  183 => 13,  171 => 9,  166 => 71,  163 => 130,  158 => 67,  156 => 58,  151 => 120,  142 => 112,  138 => 57,  136 => 33,  121 => 96,  117 => 19,  105 => 18,  91 => 31,  62 => 21,  49 => 10,  24 => 4,  25 => 3,  19 => 1,  79 => 18,  72 => 16,  69 => 25,  47 => 8,  40 => 6,  37 => 5,  22 => 2,  246 => 32,  157 => 56,  145 => 46,  139 => 50,  131 => 42,  123 => 47,  120 => 20,  115 => 43,  111 => 37,  108 => 19,  101 => 32,  98 => 31,  96 => 31,  83 => 25,  74 => 25,  66 => 15,  55 => 15,  52 => 10,  50 => 9,  43 => 7,  41 => 5,  35 => 5,  32 => 4,  29 => 3,  209 => 104,  203 => 78,  199 => 67,  193 => 73,  189 => 71,  187 => 14,  182 => 66,  176 => 64,  173 => 74,  168 => 66,  164 => 59,  162 => 62,  154 => 54,  149 => 118,  147 => 58,  144 => 115,  141 => 51,  133 => 55,  130 => 32,  125 => 44,  122 => 29,  116 => 36,  112 => 27,  109 => 41,  106 => 36,  103 => 37,  99 => 30,  95 => 34,  92 => 33,  86 => 19,  82 => 28,  80 => 19,  73 => 16,  64 => 13,  60 => 6,  57 => 12,  54 => 17,  51 => 13,  48 => 9,  45 => 8,  42 => 7,  39 => 7,  36 => 5,  33 => 3,  30 => 3,);
+    }
+}

@@ -1,0 +1,42 @@
+{% extends 'WalvaPublicationBundle:Article:layout.html.twig' %}
+
+
+
+
+{% block breadcrumb %}
+<li><a href="#">Support Kot</a> <span class="divider">/</span></li>
+<li class="active">Liste des publications</a> </li>
+
+{% endblock %}
+
+    {% block header %}
+    <h1>Liste des publications</h1>
+{% endblock %}
+
+
+
+{% block body -%}
+   
+    
+    {% for entity in entities %}
+<h2>{{ entity.titre }}</h2>
+<!--<hr style="margin: 0px; margin-bottom: 15px">-->
+
+    <p>
+        {{ entity.resume }}
+    </p>
+    <div class="pull-right">
+        <a href="{{ path('article_show', { 'id': entity.id }) }}" class="btn">
+            En savoir plus 
+            <i class="icon-arrow-right"></i></a>
+    </div>
+    <div class="badge badge-info">Publié le {{ entity.dateCreation|date('d/m/Y H:i') }}</div>
+    <br>
+    {% if loop.last == false%}
+    <hr>
+    {% endif %}
+{% endfor %}
+
+{% endblock %}
+
+

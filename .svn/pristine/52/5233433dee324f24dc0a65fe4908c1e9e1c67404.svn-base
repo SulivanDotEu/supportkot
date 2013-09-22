@@ -1,0 +1,150 @@
+<?php
+
+/* WalvaSupportkotBundle:parrain:read.html.twig */
+class __TwigTemplate_a666a351175e5bbd2ad2eeeef813f1dd extends Twig_Template
+{
+    public function __construct(Twig_Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->parent = $this->env->loadTemplate("WalvaSupportkotBundle:parrain:layout.html.twig");
+
+        $this->blocks = array(
+            'title' => array($this, 'block_title'),
+            'breadcrumb' => array($this, 'block_breadcrumb'),
+            'header' => array($this, 'block_header'),
+            'bundle_body' => array($this, 'block_bundle_body'),
+        );
+    }
+
+    protected function doGetParent(array $context)
+    {
+        return "WalvaSupportkotBundle:parrain:layout.html.twig";
+    }
+
+    protected function doDisplay(array $context, array $blocks = array())
+    {
+        // line 3
+        $context["current_page"] = "list";
+        $this->parent->display($context, array_merge($this->blocks, $blocks));
+    }
+
+    // line 6
+    public function block_title($context, array $blocks = array())
+    {
+        // line 7
+        echo "Accueil - ";
+        $this->displayParentBlock("title", $context, $blocks);
+        echo "
+";
+    }
+
+    // line 10
+    public function block_breadcrumb($context, array $blocks = array())
+    {
+        // line 11
+        $this->displayParentBlock("breadcrumb", $context, $blocks);
+        echo "
+<li class=\"active\">List</li>
+
+";
+    }
+
+    // line 17
+    public function block_header($context, array $blocks = array())
+    {
+        // line 18
+        echo "<h1>Liste des parrains</h1>
+";
+    }
+
+    // line 21
+    public function block_bundle_body($context, array $blocks = array())
+    {
+        // line 22
+        echo "
+
+<div class=\"page-header\">
+    <h1>Informations du parrain</h1>
+</div>
+
+<table class=\"table table-striped\">
+    <thead>
+        <tr>
+            <th>Champs</th>
+            <th>Valeur</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Id</td>
+            <td>";
+        // line 38
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["objet"]) ? $context["objet"] : $this->getContext($context, "objet")), "id"), "html", null, true);
+        echo "</td>
+        </tr>
+        <tr>
+            <td>Nom</td>
+            <td>";
+        // line 42
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["objet"]) ? $context["objet"] : $this->getContext($context, "objet")), "nom"), "html", null, true);
+        echo "</td>
+        </tr>
+        <tr>
+            <td>Prénom</td>
+            <td>";
+        // line 46
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["objet"]) ? $context["objet"] : $this->getContext($context, "objet")), "prenom"), "html", null, true);
+        echo "</td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>";
+        // line 50
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["objet"]) ? $context["objet"] : $this->getContext($context, "objet")), "mail"), "html", null, true);
+        echo "</td>
+        </tr>
+        <tr>
+            <td>Année</td>
+            <td>";
+        // line 54
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["objet"]) ? $context["objet"] : $this->getContext($context, "objet")), "annee"), "html", null, true);
+        echo "</td>
+        </tr>
+        <tr>
+            <td>Fac</td>
+            <td>";
+        // line 58
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["objet"]) ? $context["objet"] : $this->getContext($context, "objet")), "faculte"), "html", null, true);
+        echo "</td>
+        </tr>
+
+
+
+    </tbody>
+</table>
+
+
+
+
+</div>
+
+
+";
+    }
+
+    public function getTemplateName()
+    {
+        return "WalvaSupportkotBundle:parrain:read.html.twig";
+    }
+
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  118 => 58,  111 => 54,  104 => 50,  97 => 46,  90 => 42,  83 => 38,  65 => 22,  62 => 21,  57 => 18,  54 => 17,  46 => 11,  43 => 10,  36 => 7,  33 => 6,  28 => 3,);
+    }
+}

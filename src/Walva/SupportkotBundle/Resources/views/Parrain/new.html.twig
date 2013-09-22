@@ -1,0 +1,27 @@
+{% extends "WalvaSupportkotBundle:Parrain:layout.html.twig" %}
+{% set current_page = 'list' %}
+
+{% block breadcrumb %}
+{{ parent() }}
+<li class="active">new</li>
+{% endblock %}
+
+{% block container %}
+
+    <h1>Parrain creation</h1>
+
+    <form action="{{ path('parrain_create') }}" method="post" {{ form_enctype(form) }}>
+        {{ form_widget(form) }}
+        <p>
+            <button type="submit">Create</button>
+        </p>
+    </form>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('parrain') }}">
+            Back to the list
+        </a>
+    </li>
+</ul>
+{% endblock %}

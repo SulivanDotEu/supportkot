@@ -1,0 +1,167 @@
+<?php
+
+/* WalvaSupportkotBundle:Supportkot:menu.html.twig */
+class __TwigTemplate_71cc18bd80fdda0190881fdd0606e5e2 extends Twig_Template
+{
+    public function __construct(Twig_Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->parent = false;
+
+        $this->blocks = array(
+        );
+    }
+
+    protected function doDisplay(array $context, array $blocks = array())
+    {
+        // line 1
+        echo "<ul class=\"nav nav-tabs nav-stacked\" id=\"left_menu\">
+    <li class=\"";
+        // line 2
+        if (((isset($context["current_page"]) ? $context["current_page"] : $this->getContext($context, "current_page")) == "welcome_day")) {
+            echo " active ";
+        }
+        echo "\">
+        <a href=\"";
+        // line 3
+        echo $this->env->getExtension('routing')->getPath("walva_supportkot_projets_welcome_day");
+        echo "\">
+            <i class=\"icon-chevron-right ";
+        // line 4
+        if (((isset($context["current_page"]) ? $context["current_page"] : $this->getContext($context, "current_page")) == "welcome_day")) {
+            echo " icon-white ";
+        }
+        echo "\"></i>
+            Welcome Day/Welcome Night</a>
+    </li>
+    <li class=\"";
+        // line 7
+        if (((isset($context["current_page"]) ? $context["current_page"] : $this->getContext($context, "current_page")) == "methodo")) {
+            echo " active ";
+        }
+        echo "\">
+        <a href=\"";
+        // line 8
+        echo $this->env->getExtension('routing')->getPath("walva_supportkot_projets_methodo");
+        echo "\">
+            <i class=\"icon-chevron-right ";
+        // line 9
+        if (((isset($context["current_page"]) ? $context["current_page"] : $this->getContext($context, "current_page")) == "methodo")) {
+            echo " icon-white ";
+        }
+        echo "\"></i>
+            Ateliers Méthodologie</a>
+    </li>
+    <li class=\"";
+        // line 12
+        if (((isset($context["current_page"]) ? $context["current_page"] : $this->getContext($context, "current_page")) == "temoin")) {
+            echo " active ";
+        }
+        echo "\">
+        <a href=\"";
+        // line 13
+        echo $this->env->getExtension('routing')->getPath("walva_supportkot_projets_temoin");
+        echo "\">
+            <i class=\"icon-chevron-right ";
+        // line 14
+        if (((isset($context["current_page"]) ? $context["current_page"] : $this->getContext($context, "current_page")) == "temoin")) {
+            echo " icon-white ";
+        }
+        echo "\"></i>
+            Soirées Témoignages</a>
+    </li>
+    <li class=\"";
+        // line 17
+        if (((isset($context["current_page"]) ? $context["current_page"] : $this->getContext($context, "current_page")) == "postuler")) {
+            echo " active ";
+        }
+        echo "\">
+        <a href=\"";
+        // line 18
+        echo $this->env->getExtension('routing')->getPath("walva_supportkot_projets_postuler");
+        echo "\">
+            <i class=\"icon-chevron-right ";
+        // line 19
+        if (((isset($context["current_page"]) ? $context["current_page"] : $this->getContext($context, "current_page")) == "postuler")) {
+            echo " icon-white ";
+        }
+        echo "\"></i>
+            Soirée Postuler</a>
+    </li>
+    <li class=\"";
+        // line 22
+        if (((isset($context["current_page"]) ? $context["current_page"] : $this->getContext($context, "current_page")) == "vie")) {
+            echo " active ";
+        }
+        echo "\">
+        <a href=\"";
+        // line 23
+        echo $this->env->getExtension('routing')->getPath("walva_supportkot_projets_vie");
+        echo "\">
+            <i class=\"icon-chevron-right ";
+        // line 24
+        if (((isset($context["current_page"]) ? $context["current_page"] : $this->getContext($context, "current_page")) == "vie")) {
+            echo " icon-white ";
+        }
+        echo "\"></i>
+            Soirée Vie Active</a>
+    </li>
+    <li class=\"";
+        // line 27
+        if (((isset($context["current_page"]) ? $context["current_page"] : $this->getContext($context, "current_page")) == "international")) {
+            echo " active ";
+        }
+        echo "\">
+        <a href=\"";
+        // line 28
+        echo $this->env->getExtension('routing')->getPath("walva_supportkot_projets_international");
+        echo "\">
+            <i class=\"icon-chevron-right ";
+        // line 29
+        if (((isset($context["current_page"]) ? $context["current_page"] : $this->getContext($context, "current_page")) == "international")) {
+            echo " icon-white ";
+        }
+        echo "\"></i>
+            Témoignage parcours internationaux</a>
+    </li>
+    <li class=\"";
+        // line 32
+        if (((isset($context["current_page"]) ? $context["current_page"] : $this->getContext($context, "current_page")) == "run")) {
+            echo " active ";
+        }
+        echo "\">
+        <a href=\"";
+        // line 33
+        echo $this->env->getExtension('routing')->getPath("walva_supportkot_projets_run");
+        echo "\">
+            <i class=\"icon-chevron-right ";
+        // line 34
+        if (((isset($context["current_page"]) ? $context["current_page"] : $this->getContext($context, "current_page")) == "run")) {
+            echo " icon-white ";
+        }
+        echo "\"></i>
+            Run&AMP;Bloque</a>
+    </li>
+    
+    
+</ul>
+
+";
+    }
+
+    public function getTemplateName()
+    {
+        return "WalvaSupportkotBundle:Supportkot:menu.html.twig";
+    }
+
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  140 => 34,  122 => 29,  118 => 28,  112 => 27,  104 => 24,  100 => 23,  94 => 22,  86 => 19,  82 => 18,  76 => 17,  68 => 14,  64 => 13,  22 => 2,  19 => 1,  236 => 133,  233 => 132,  231 => 131,  228 => 130,  224 => 119,  221 => 118,  216 => 113,  213 => 112,  209 => 104,  206 => 103,  200 => 93,  197 => 92,  191 => 15,  187 => 14,  183 => 13,  180 => 12,  177 => 11,  171 => 9,  165 => 135,  163 => 130,  151 => 120,  149 => 118,  144 => 115,  142 => 112,  136 => 33,  132 => 105,  130 => 32,  121 => 96,  119 => 92,  26 => 2,  61 => 17,  58 => 12,  53 => 19,  50 => 9,  40 => 7,  30 => 6,  74 => 25,  71 => 24,  51 => 13,  45 => 8,  42 => 17,  35 => 9,  32 => 4,  65 => 20,  62 => 19,  57 => 18,  54 => 14,  46 => 8,  43 => 11,  36 => 7,  33 => 7,  28 => 3,);
+    }
+}

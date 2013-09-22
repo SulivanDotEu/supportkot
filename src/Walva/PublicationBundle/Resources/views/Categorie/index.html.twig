@@ -1,0 +1,50 @@
+{% extends 'WalvaPublicationBundle:Categorie:layout.html.twig' %}
+
+
+{% block breadcrumb %}
+{{ parent() }}
+<li class="active">Categorie list</li>
+{% endblock %}
+
+
+
+{% block body -%}
+<h1>Categorie list</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nom</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('categorie_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+                <td>{{ entity.nom }}</td>
+                <td>
+                    <ul>
+                        <div class="btn-group">
+                            <a class="btn" href="{{ path('categorie_show', { 'id': entity.id }) }} ">
+                                <i class="icon-eye-open"></i> Show</a>
+                            <a class="btn" href="{{ path('categorie_edit', { 'id': entity.id }) }}">
+                                <i class="icon-pencil"></i> Edit</a>
+                        </div>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    {% endblock %}
+
+
+{% block container_header_right %}
+    <a class="btn btn-primary" href="{{ path('categorie_new') }}">
+        <i class="icon-plus icon-white"></i> 
+        Create a new entry
+    </a>
+{% endblock %}
